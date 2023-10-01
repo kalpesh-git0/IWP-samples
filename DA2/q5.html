@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22MCA0247</title>
+    <style>
+        .first_table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .second_table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+        .first_table td{
+            padding: 5px;
+        }
+        .second_table table{
+            width: 500px;
+        }
+        .second_table td{
+            padding: 5px;
+            width: 150px;
+            height: 30px;
+        }
+        #grayCell{
+            background-color: rgb(173, 173, 173);
+        }
+        th{
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first_table">
+        <table border="2px">
+            <thead>
+                <th colspan="4" >Purchased Equipments (June, 2006)</th>
+            </thead>
+            <tr>
+                <th rowspan="2">Item Num#</th>
+                <th rowspan="2">Item Picture</th>
+                <th>Item Description</th>
+                <th rowspan="2">Price</th>
+            </tr>
+            <tr><th>Shipping Handling, Installation, etc</th></tr>
+            <tr>
+                <td rowspan="2">1.</td>
+                <td rowspan="2"></td>
+                <td>IBM Clone Computer</td>
+                <td>$400.00</td>
+            </tr>
+            <tr>
+                <td>
+                    Shipping Handling, Installation. etc
+                </td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2.</td>
+                <td rowspan="2"></td>
+                <td>1GB RAM Module for Computer</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Shipping Handling, Installation, etc</td>
+                <td>$14.00</td>
+            </tr>
+            <tfoot>
+                <th colspan="4">Purchased Equipments (June, 2006)</th>
+            </tfoot>
+        </table>
+    </div>
+    <div class="second_table">
+        <table border="1px">
+            <thead>
+                <th colspan="4"  >Table Heading Cell Spanning 4 Columns</th>
+            </thead>
+            <tr>
+                <td>Normal Cell</td>
+                <td colspan="2">Cell Spanning 2 Columns</td>
+                <td>Normal Cell</td>
+            </tr>
+            <tr>
+                <td rowspan="3" id="grayCell">Cell Spanning 3 rows with a gray (US spelling) background</td>
+                <td>Normal Cell</td>
+                <td>Normal Cell</td>
+                <td>Normal Cell</td>
+            </tr>
+            <tr>
+                <td>Normal Cell</td>
+                <td rowspan="2" colspan="2" >Cell spanning 2 rows and 2 columns</td>
+            </tr>
+            <tr>
+                <td>Normal Cell</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

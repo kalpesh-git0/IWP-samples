@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22MCA0247</title>
+    <style>
+        .first_form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            width: fit-content;
+        }
+
+        .first_form table {
+            width: 380px;
+            border-collapse: collapse;
+
+        }
+    
+        td {
+            padding: 15px;
+        }
+        th{
+            height:30px
+        }
+        .he{
+            background-color: rgb(162, 161, 161);
+            float: right;
+            width: 380px;
+        } 
+
+        .left {
+            padding-right: 15px;
+            text-align: right;
+        }
+
+        .second_form{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_form">
+        <table  style="background-color: gainsboro;">
+           <tr style="background-color: gray; text-align: end;">
+            <th colspan="2" style="padding-right: 25px;">The World of Fruit</th>
+          </tr>
+            <tr style="text-align: end;">
+                <th colspan="2" style="padding-right: 30px;">Fruit Survey</th>
+            </tr>
+            <tr>
+                <td class="left">Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="left">Addrrss</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="left">Email</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="left"> How many pieces of fruit do you eat per day ?</td>
+                <td>
+                    <input type="radio" name="pcs" id="">0 <br>
+                    <input type="radio" name="pcs" id="">1 <br>
+                    <input type="radio" name="pcs" id="">2 <br>
+                    <input type="radio" name="pcs" id="">More than 2
+                </td>
+            </tr>
+            <tr>
+                <td class="left">My favourite fruit</td>
+                <td>
+                    <textarea name="fruits" id="" cols="15" rows="4" overflow="auto">
+                        Apple 
+                        Banana 
+                        Plum 
+                        Pomegranate
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">Would you like a brochure?</td>
+                <td><input type="checkbox" name="" id=""></td>
+            </tr>
+            <tfoot>
+                <td style="text-align: center;" colspan="2"> 
+                    <button type="submit">Submit</button>
+                </td>
+            </tfoot>
+        </table>
+    </div>
+    <div class="second_form">
+        <table border="">
+            <tr>
+                <th colspan="2">Pizza Shop 2.0</th>
+            </tr>
+            <tr>
+                <td>Name </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td>
+                    <input type="radio" name="topp" id="">Supreme <br>
+                    <input type="radio" name="topp" id="">Vegetarian <br>
+                    <input type="radio" name="topp" id="">Hawaiian 
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td>
+                    <select>
+                        <option value="tomato">Tomato</option>
+                        <option value="chilli">Chilli</option>
+                        <option value="mix">mix</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td>
+                    <input type="checkbox" name="extraCheese" id="">Extra Cheese
+                    <input type="checkbox" name="gluten" id="">Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Delivery Instructions: <br>
+                    <textarea name="" id="" cols="70" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button">Send my Order</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
